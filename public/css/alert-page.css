@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(/images/dark-green.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: #b6d4c8;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#preloader {
+    background: #0b0d0c url(/images/logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: ease-in-out 1s;
+    width: 100vw;
+}
+
+#header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 30vh;
+    text-align: center;
+    width: 100%;
+}
+
+#header h1 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 4.5vmax;
+    margin-bottom: 2vmax;
+    margin-top: 2vmax;
+}
+
+#body {
+    display: flex;
+    min-height: 60vh;
+    width: 100%;
+}
+
+#body>div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+#body>div:first-of-type {
+    visibility: hidden;
+}
+
+#body>div:nth-of-type(2) {
+    box-sizing: border-box;
+}
+
+#body>div:nth-of-type(3) {
+    visibility: hidden;
+}
+
+#body .column-two div {
+    width: 100%;
+}
+
+#body h3 {
+    font-size: 1.5vmax;
+    margin-bottom: 3vmax;
+    text-align: center;
+}
+
+form {
+    margin: 0;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid #b6d4c8;
+    border-radius: 0.5vmax;
+    box-sizing: border-box;
+    color: #b6d4c8;
+    display: inline-block;
+    font-size: 1vmax;
+    height: 2.5vmax;
+    margin-bottom: 1vmax;
+    text-indent: 0.5vmax;
+    width: 100%;
+}
+
+input::placeholder {
+    color: #a4b8b0;
+    font-size: 1vmax;
+}
+
+.login-button {
+    background-color: transparent;
+    border: 1px solid #c5ded4;
+    border-radius: 0.5vmax;
+    color: #c5ded4;
+    font-size: 1vmax;
+    height: 2.5vmax;
+    width: 100%;
+}
+
+.login-button:hover {
+    background-color: #c5ded4;
+    color: #011c11;
+}
+
+.register-button {
+    background-color: transparent;
+    border: 1px solid #e2abb4;
+    border-radius: 0.5vmax;
+    color: #e2abb4;
+    font-size: 1vmax;
+    height: 2.5vmax;
+    margin-top: 1vmax;
+    width: 100%;
+}
+
+.register-button:hover {
+    background-color: #e2abb4;
+    color: #011c11;
+}
+
+.home-button {
+    background-color: transparent;
+    border: 1px solid #ceae20;
+    border-radius: 0.5vmax;
+    color: #ceae20;
+    font-size: 1vmax;
+    height: 2.5vmax;
+    margin-top: 1vmax;
+    width: 100%;
+}
+
+.home-button:hover {
+    background-color: #ceae20;
+    color: #011c11;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+#footer span {
+    font-size: 0.75vmax;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+@media (max-width:1024px) {
+
+    #preloader {
+        background-size: 20%;
+    }
+
+    #header {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        min-height: 30vh;
+        text-align: center;
+        width: 100%;
+    }
+
+    #header h1 {
+        font-family: 'Berkshire Swash', cursive;
+        font-size: 6.5vmax;
+        margin-bottom: 2vmax;
+        margin-top: 2vmax;
+    }
+
+    #body {
+        display: flex;
+        min-height: 60vh;
+        width: 100%;
+    }
+
+    #body>div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex: 1;
+    }
+
+    #body>div:first-of-type {
+        display: none;
+    }
+
+    #body>div:nth-of-type(3) {
+        display: none;
+    }
+
+    #body .column-two div {
+        width: 50%;
+    }
+
+    #body h3 {
+        font-size: 2vmax;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    input {
+        background-color: transparent;
+        border: 1px solid #b6d4c8;
+        border-radius: 0.5vmax;
+        box-sizing: border-box;
+        color: #b6d4c8;
+        display: inline-block;
+        font-size: 1.5vmax;
+        height: 5vmax;
+        text-indent: 0.5vmax;
+        width: 100%;
+    }
+
+    input::placeholder {
+        color: #a4b8b0;
+        font-size: 1.5vmax;
+    }
+
+    .login-button {
+        background-color: transparent;
+        border: 1px solid #c5ded4;
+        border-radius: 0.5vmax;
+        color: #c5ded4;
+        font-size: 1.5vmax;
+        height: 5vmax;
+        margin-bottom: 1vmax;
+        width: 100%;
+    }
+
+    .register-button {
+        background-color: transparent;
+        border: 1px solid #e2abb4;
+        border-radius: 0.5vmax;
+        color: #e2abb4;
+        font-size: 1.5vmax;
+        height: 5vmax;
+        margin-bottom: 1vmax;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .home-button {
+        background-color: transparent;
+        border: 1px solid #ceae20;
+        border-radius: 0.5vmax;
+        color: #ceae20;
+        font-size: 1.5vmax;
+        height: 5vmax;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+    }
+
+    #footer span {
+        font-size: 1vmax;
+    }
+}
+
+
+
+@media (max-width:900px) and (orientation: landscape) {
+
+    #header,
+    #body,
+    #footer {
+        padding-left: 3vmax;
+        padding-right: 3vmax;
+    }
+}
