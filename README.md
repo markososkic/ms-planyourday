@@ -11,7 +11,9 @@
 ## About The App
 This is an easy-to-use, personal daily planner, that helps you keep track of your daily schedule.
 
-![mockup](public/images/mock-up.png)
+![mockup](public/images/mock-up-01.png)
+
+![mockup](public/images/mock-up-02.png)
 
 
 
