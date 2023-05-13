@@ -53,7 +53,7 @@ router.post("/register", (req, res) => {
             token: crypto.randomBytes(16).toString("hex")
         });
 
-        const link = `https://planyourday-yg6y.onrender.com/user/confirm/${token.token}`; // a trial link.
+        const link = `https://ms-planyourday.onrender.com/user/confirm/${token.token}`;
 
         User.findOne({ email: newUser.email })
             .then((found) => {
