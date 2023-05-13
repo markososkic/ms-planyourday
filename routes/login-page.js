@@ -42,8 +42,10 @@ router.post("/login", (req, res) => {
                         }
                     });
                 } else {
-                    res.render("invalid-page", { year: year });
+                    res.render("unverified-page", { year: year });
                 }
+            } else {
+                res.render("invalid-page", { year: year });
             }
         }).catch((err) => {
             console.log(err);
