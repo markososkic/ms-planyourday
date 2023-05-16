@@ -5,17 +5,18 @@
 }
 
 body {
-    background: url(/images/dark-green.jpg);
+    background: url(/images/fields.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    color: #b6d4c8;
+    background-size: cover;
+    color: #5e2c24;
     font-family: 'Inter', sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
 
 #preloader {
-    background: #0b0d0c url(/images/logo.png);
+    background: #b6aba5 url(/images/logo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 10%;
@@ -38,8 +39,8 @@ body {
 }
 
 #header h1 {
-    font-family: 'Berkshire Swash', cursive;
-    font-size: 4.5vmax;
+    font-size: 3.5vmax;
+    font-weight: 300;
     margin-bottom: 2vmax;
     margin-top: 2vmax;
 }
@@ -79,10 +80,10 @@ form {
 
 input {
     background-color: transparent;
-    border: 1px solid #b6d4c8;
+    border: 1px solid #5e2c24;
     border-radius: 0.5vmax;
     box-sizing: border-box;
-    color: #b6d4c8;
+    color: #5e2c24;
     display: inline-block;
     font-size: 1vmax;
     height: 2.5vmax;
@@ -92,30 +93,30 @@ input {
 }
 
 input::placeholder {
-    color: #a4b8b0;
+    color: #5e2c24;
     font-size: 1vmax;
 }
 
 .login-button {
     background-color: transparent;
-    border: 1px solid #c5ded4;
+    border: 1px solid #5e2c24;
     border-radius: 0.5vmax;
-    color: #c5ded4;
+    color: #5e2c24;
     font-size: 1vmax;
     height: 2.5vmax;
     width: 100%;
 }
 
 .login-button:hover {
-    background-color: #c5ded4;
-    color: #011c11;
+    background-color: #5e2c24;
+    color: #b6aba5;
 }
 
 .register-button {
     background-color: transparent;
-    border: 1px solid #e2abb4;
+    border: 1px solid #5e2c24;
     border-radius: 0.5vmax;
-    color: #e2abb4;
+    color: #5e2c24;
     font-size: 1vmax;
     height: 2.5vmax;
     margin-top: 1vmax;
@@ -123,15 +124,15 @@ input::placeholder {
 }
 
 .register-button:hover {
-    background-color: #e2abb4;
-    color: #011c11;
+    background-color: #5e2c24;
+    color: #b6aba5;
 }
 
 .home-button {
     background-color: transparent;
-    border: 1px solid #ceae20;
+    border: 1px solid #5e2c24;
     border-radius: 0.5vmax;
-    color: #ceae20;
+    color: #5e2c24;
     font-size: 1vmax;
     height: 2.5vmax;
     margin-top: 1vmax;
@@ -139,8 +140,8 @@ input::placeholder {
 }
 
 .home-button:hover {
-    background-color: #ceae20;
-    color: #011c11;
+    background-color: #5e2c24;
+    color: #b6aba5;
 }
 
 #footer {
@@ -161,6 +162,8 @@ a {
 
 
 
+
+
 @media (max-width:1024px) {
 
     #preloader {
@@ -178,7 +181,6 @@ a {
     }
 
     #header h1 {
-        font-family: 'Berkshire Swash', cursive;
         font-size: 6.5vmax;
         margin-bottom: 2vmax;
         margin-top: 2vmax;
@@ -215,10 +217,8 @@ a {
 
     input {
         background-color: transparent;
-        border: 1px solid #b6d4c8;
         border-radius: 0.5vmax;
         box-sizing: border-box;
-        color: #b6d4c8;
         display: inline-block;
         font-size: 1.5vmax;
         height: 5vmax;
@@ -227,15 +227,12 @@ a {
     }
 
     input::placeholder {
-        color: #a4b8b0;
         font-size: 1.5vmax;
     }
 
     .login-button {
         background-color: transparent;
-        border: 1px solid #c5ded4;
         border-radius: 0.5vmax;
-        color: #c5ded4;
         font-size: 1.5vmax;
         height: 5vmax;
         margin-bottom: 1vmax;
@@ -244,9 +241,7 @@ a {
 
     .register-button {
         background-color: transparent;
-        border: 1px solid #e2abb4;
         border-radius: 0.5vmax;
-        color: #e2abb4;
         font-size: 1.5vmax;
         height: 5vmax;
         margin-bottom: 1vmax;
@@ -256,9 +251,7 @@ a {
 
     .home-button {
         background-color: transparent;
-        border: 1px solid #ceae20;
         border-radius: 0.5vmax;
-        color: #ceae20;
         font-size: 1.5vmax;
         height: 5vmax;
         margin-top: 0;
@@ -276,8 +269,6 @@ a {
         font-size: 1vmax;
     }
 }
-
-
 
 @media (max-width:900px) and (orientation: landscape) {
 
