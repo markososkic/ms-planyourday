@@ -82,6 +82,12 @@ body {
     width: 100%;
 }
 
+#body h3 {
+    font-size: 1.5vmax;
+    margin-bottom: 3vmax;
+    text-align: center;
+}
+
 form {
     margin: 0;
 }
@@ -127,6 +133,7 @@ input::placeholder {
     color: #5e2c24;
     font-size: 1vmax;
     height: 2.5vmax;
+    margin-top: 1vmax;
     width: 100%;
 }
 
@@ -218,6 +225,10 @@ a {
         width: 50%;
     }
 
+    #body h3 {
+        font-size: 2vmax;
+    }
+
     form {
         margin: 0;
     }
@@ -277,7 +288,7 @@ a {
     }
 }
 
-@media (max-width:900px) and (orientation: landscape) {
+@media (max-width:950px) and (orientation: landscape) {
 
     #header,
     #body,
