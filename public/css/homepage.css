@@ -47,7 +47,7 @@ body {
 }
 
 #header h1 {
-    font-size: 5vmax;
+    font-size: 3.5vmax;
     margin-bottom: 2vmax;
     margin-top: 2vmax;
     transition: ease-in-out 3s;
