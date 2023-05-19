@@ -66,7 +66,7 @@ main h3 {
 
 form {
     margin: 0;
-    width: 30%;
+    width: 50%;
 }
 
 input {
@@ -169,14 +169,16 @@ a {
         margin: 0;
     }
 
-    .login-button {
+    input,
+    .login-button,
+    .register-button,
+    .home-button {
         font-size: 1.5vmax;
         height: 5vmax;
     }
 
-    .register-button {
+    input::placeholder {
         font-size: 1.5vmax;
-        height: 5vmax;
     }
 
     footer {

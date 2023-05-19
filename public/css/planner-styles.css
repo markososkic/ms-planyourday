@@ -254,7 +254,7 @@ a {
 @media (max-width: 1024px) and (orientation:portrait) {
 
     header h1 {
-        font-size: 6.5vmax;
+        font-size: 5vmax;
         margin-bottom: 2.5vmax;
         margin-top: 2.5vmax;
     }
