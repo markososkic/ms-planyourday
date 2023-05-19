@@ -1,7 +1,5 @@
 const nodemailer = require("nodemailer");
 
-
-
 const emailVerification = async (email, link) => {
 
     try {
@@ -16,7 +14,7 @@ const emailVerification = async (email, link) => {
             }
         })
 
-        let info = await transporter.sendMail({
+        await transporter.sendMail({
             from: process.env.USER,
             to: email,
             subject: "Verify your \"Plan Your Day\" account",
@@ -35,7 +33,5 @@ const emailVerification = async (email, link) => {
         console.log(err);
     }
 }
-
-
 
 module.exports = emailVerification;

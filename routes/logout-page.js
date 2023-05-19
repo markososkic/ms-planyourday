@@ -7,8 +7,6 @@ const User = require("../models/user");
 
 dbConnection();
 
-
-
 router.get("/pages/:id/logout", (req, res) => {
 
     let year = new Date().getFullYear();
@@ -25,7 +23,5 @@ router.get("/pages/:id/logout", (req, res) => {
             console.log(err);
         })
 })
-
-
 
 module.exports = router;

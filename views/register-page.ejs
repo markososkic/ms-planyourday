@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#b6aba5">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
-    <link rel="stylesheet" href="/css/register_page.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,36 +18,27 @@
 </head>
 
 <body>
-    <div id="preloader"></div>
-    <div id="header">
+    <section id="preloader"></section>
+    <header>
         <h1>Start planning!</h1>
-    </div>
-    <div id="body">
-        <div class="column-one">
-            <!-- empty space -->
-        </div>
-        <div class="column-two">
-            <div>
-                <form action="/register" method="POST">
-                    <input type="text" name="fName" placeholder="First name" autocomplete="off" required>
-                    <input type="text" name="lName" placeholder="Last name" autocomplete="off" required>
-                    <input type="email" name="email" placeholder="E-mail address" autocomplete="off" required>
-                    <input type="password" name="password" placeholder="Password" autocomplete="off" required>
-                    <input type="text" name="city" placeholder="Current city" autocomplete="off" required>
-                    <button class="register-button" type="submit">Create account</button>
-                </form>
-                <form action="/" method="GET">
-                    <button class="home-button" type="submit">Home</button>
-                </form>
-            </div>
-        </div>
-        <div class="column-three">
-            <!-- empty space -->
-        </div>
-    </div>
-    <div id="footer">
-        <span>© <%=year%> <a href="https://www.markososkic.com" target="_blank">Marko Soskic</a></span>
-    </div>
+    </header>
+    <main>
+        <form action="/register" method="POST">
+            <input type="text" name="fName" placeholder="First name" autocomplete="off" required>
+            <input type="text" name="lName" placeholder="Last name" autocomplete="off" required>
+            <input type="email" name="email" placeholder="E-mail address" autocomplete="off" required>
+            <input type="password" name="password" placeholder="Password" autocomplete="off" required>
+            <input type="text" name="city" placeholder="Current city" autocomplete="off" required>
+            <button class="register-button" type="submit">Create account</button>
+        </form>
+        <form action="/" method="GET">
+            <button class="home-button" type="submit">Home</button>
+        </form>
+    </main>
+    <footer>
+        <span>© <%=year%> <a href="https://www.markososkic.com/" target="_blank" rel="noopener noreferrer">Marko
+                    Soskic</a></span>
+    </footer>
     <script src="/scripts/index.js"></script>
 </body>
 

@@ -7,15 +7,11 @@ const User = require("../models/user");
 
 dbConnection();
 
-
-
 router.get("/login", (req, res) => {
 
     let year = new Date().getFullYear();
     res.render("login-page", { year: year });
 })
-
-
 
 router.post("/login", (req, res) => {
 
@@ -51,7 +47,5 @@ router.post("/login", (req, res) => {
             console.log(err);
         });
 });
-
-
 
 module.exports = router;

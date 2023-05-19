@@ -9,8 +9,6 @@ const [Task, Prio, Work] = require("../models/task");
 
 dbConnection();
 
-
-
 router.get("/pages/planyourday/:id", (req, res) => {
 
     User.findOne({ _id: req.params.id })
@@ -47,8 +45,6 @@ router.get("/pages/planyourday/:id", (req, res) => {
                             imageURL = "https://openweathermap.org/img/wn/" + tempIcon + "@2x.png";
                         }
 
-
-
                         Task.find({ author: currentUser._id })
                             .then((found) => {
                                 const foundTasks = found;
@@ -78,8 +74,6 @@ router.get("/pages/planyourday/:id", (req, res) => {
             }
         })
 })
-
-
 
 // add new tasks
 
@@ -115,8 +109,6 @@ router.post("/pages/planyourday/:id/work", (req, res) => {
     res.redirect(`/pages/planyourday/${req.body.author}`);
 })
 
-
-
 // delete tasks
 
 router.post("/pages/planyourday/:id/delete/daily", (req, res) => {
@@ -137,8 +129,6 @@ router.post("/pages/planyourday/:id/delete/daily", (req, res) => {
         });
 });
 
-
-
 router.post("/pages/planyourday/:id/delete/prio", (req, res) => {
 
     const checkedTaskId = req.body.checkbox;
@@ -156,8 +146,6 @@ router.post("/pages/planyourday/:id/delete/prio", (req, res) => {
                 });
         });
 });
-
-
 
 router.post("/pages/planyourday/:id/delete/work", (req, res) => {
 
@@ -177,8 +165,6 @@ router.post("/pages/planyourday/:id/delete/work", (req, res) => {
         });
 });
 
-
-
 // update location
 
 router.post("/pages/planyourday/:id/location", (req, res) => {
@@ -196,7 +182,5 @@ router.post("/pages/planyourday/:id/location", (req, res) => {
             console.log(err);
         });
 });
-
-
 
 module.exports = router;

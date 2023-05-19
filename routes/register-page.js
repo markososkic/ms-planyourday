@@ -10,15 +10,11 @@ const emailVerification = require("../utils/send-email");
 
 dbConnection();
 
-
-
 router.get("/register", (req, res) => {
 
     let year = new Date().getFullYear();
     res.render("register-page", { year: year });
 })
-
-
 
 router.post("/register", (req, res) => {
 
@@ -73,7 +69,5 @@ router.post("/register", (req, res) => {
             })
     });
 })
-
-
 
 module.exports = router;

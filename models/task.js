@@ -5,8 +5,6 @@ const taskSchema = new mongoose.Schema({
     author: String
 });
 
-
-
 const Task = new mongoose.model(
     "Task",
     taskSchema
@@ -22,10 +20,6 @@ const Work = new mongoose.model(
     taskSchema
 );
 
-
-
 const items = [Task, Prio, Work];
-
-
 
 module.exports = items;

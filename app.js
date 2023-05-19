@@ -13,13 +13,9 @@ const plannerPage = require("./routes/planner-page");
 const confirmationPage = require("./routes/confirm-token-page");
 const logoutPage = require("./routes/logout-page");
 
-
-
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-
-
 
 // routes.
 
@@ -29,7 +25,5 @@ app.use(registerPage);
 app.use(plannerPage);
 app.use(confirmationPage);
 app.use(logoutPage);
-
-
 
 app.listen(process.env.PORT);

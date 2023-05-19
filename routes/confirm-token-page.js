@@ -8,8 +8,6 @@ const Token = require("../models/token");
 
 dbConnection();
 
-
-
 router.get("/user/confirm/:token", async (req, res) => {
 
     let year = new Date().getFullYear();
@@ -29,7 +27,5 @@ router.get("/user/confirm/:token", async (req, res) => {
         res.status(400).send("An error occured.");
     }
 })
-
-
 
 module.exports = router;

@@ -1,14 +1,3 @@
-// title animation
-
-let heading = document.querySelector("#header h1");
-
-document.addEventListener("DOMContentLoaded", () => {
-    heading.classList.remove("passive");
-    heading.classList.add("active");
-});
-
-
-
 // preloader
 
 var loader = document.getElementById("preloader");

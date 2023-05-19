@@ -20,7 +20,7 @@ body {
     overflow-x: hidden;
 }
 
-#header {
+header {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -29,42 +29,42 @@ body {
     width: 100%;
 }
 
-#header h1 {
+header h1 {
     font-size: 4.5vmax;
     margin-bottom: 2vmax;
     margin-top: 2vmax;
 }
 
-#header h3 {
+header h3 {
     font-size: 1.5vmax;
 }
 
-#body {
+main {
     display: flex;
     min-height: 50vh;
     width: 100%;
 }
 
-#body>div {
+main>div {
     flex: 1;
 }
 
-#body>div:first-of-type {
+main>div:first-of-type {
     box-sizing: border-box;
     padding: 3vmax;
 }
 
-#body>div:nth-of-type(2) {
+main>div:nth-of-type(2) {
     box-sizing: border-box;
     padding: 3vmax;
 }
 
-#body>div:nth-of-type(3) {
+main>div:nth-of-type(3) {
     box-sizing: border-box;
     padding: 3vmax;
 }
 
-#body h3 {
+main h3 {
     margin-bottom: 3vmax;
     text-align: center;
 }
@@ -194,8 +194,8 @@ input::placeholder {
     color: #5e2c24;
     flex: 1;
     font-size: 1vmax;
-    margin-left: 1vmax;
     height: 2.5vmax;
+    margin-left: 1vmax;
     width: 2.5vmax;
 }
 
@@ -204,12 +204,12 @@ input::placeholder {
     color: #b6aba5;
 }
 
-#settings {
+section {
     display: flex;
     min-height: 30vh;
 }
 
-#settings>div {
+section>div {
     box-sizing: border-box;
     flex: 1;
     padding: 3vmax;
@@ -231,15 +231,15 @@ input::placeholder {
     color: #b6aba5;
 }
 
-#footer {
-    display: flex;
-    justify-content: center;
+footer {
     align-items: center;
+    display: flex;
     height: 10vh;
+    justify-content: center;
 }
 
-#footer span {
-    font-size: 0.75vmax;
+footer span {
+    font-size: 1vmax;
 }
 
 a {
@@ -253,17 +253,17 @@ a {
 
 @media (max-width: 1024px) and (orientation:portrait) {
 
-    #header h1 {
+    header h1 {
         font-size: 6.5vmax;
         margin-bottom: 2.5vmax;
         margin-top: 2.5vmax;
     }
 
-    #header h3 {
+    header h3 {
         font-size: 2vmax;
     }
 
-    #body {
+    main {
         flex-direction: column;
         padding: 0 5vmax 0 5vmax;
     }
@@ -307,19 +307,19 @@ a {
         width: 100%;
     }
 
-    #settings {
+    section {
         flex-direction: column;
         padding: 0 5vmax 0 5vmax;
     }
 
-    #settings>div {
+    section>div {
         box-sizing: border-box;
         flex: 1;
         padding: 3vmax;
     }
 
-    #settings>div:nth-of-type(1),
-    #settings>div:nth-of-type(3) {
+    section>div:nth-of-type(1),
+    section>div:nth-of-type(3) {
         display: none;
     }
 
@@ -336,10 +336,10 @@ a {
 
 @media (max-width: 950px) and (orientation:landscape) {
 
-    #header,
-    #body,
-    #settings,
-    #footer {
+    header,
+    main,
+    section,
+    footer {
         padding-left: 3vmax;
         padding-right: 3vmax;
     }
