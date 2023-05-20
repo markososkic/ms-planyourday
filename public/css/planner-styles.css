@@ -30,12 +30,14 @@ header {
 }
 
 header h1 {
+    font-family: 'Jockey One', sans-serif;
     font-size: 4.5vmax;
     margin-bottom: 2vmax;
     margin-top: 2vmax;
 }
 
 header h3 {
+    font-family: 'Jockey One', sans-serif;
     font-size: 1.5vmax;
 }
 
@@ -75,16 +77,19 @@ form {
 
 .column-one h3 {
     color: #5e2c24;
+    font-family: 'Jockey One', sans-serif;
     font-size: 2vmax;
 }
 
 .column-two h3 {
     color: #5e2c24;
+    font-family: 'Jockey One', sans-serif;
     font-size: 2vmax;
 }
 
 .column-three h3 {
     color: #5e2c24;
+    font-family: 'Jockey One', sans-serif;
     font-size: 2vmax;
 }
 

@@ -47,6 +47,7 @@ header {
 }
 
 header h1 {
+    font-family: 'Jockey One', sans-serif;
     font-size: 3.5vmax;
     transition: ease-in-out 3s;
 }
@@ -66,7 +67,7 @@ main h3 {
 
 form {
     margin: 0;
-    width: 50%;
+    width: 30%;
 }
 
 input {
@@ -167,6 +168,7 @@ a {
 
     form {
         margin: 0;
+        width: 50%;
     }
 
     input,
