@@ -170,9 +170,12 @@ router.post("/pages/planyourday/:id/delete/work", (req, res) => {
 router.post("/pages/planyourday/:id/location", (req, res) => {
 
     let newQuery = req.body.newQuery;
-    let cityFirstLetter = newQuery.slice(0, 1);
-    let cityOtherLetters = newQuery.slice(1, newQuery.length);
-    let city = cityFirstLetter.toUpperCase() + cityOtherLetters.toLowerCase();
+    let cityName = newQuery.split(" ");
+    let result = [];
+    cityName.forEach((item) => {
+        result.push(item[0].toUpperCase() + item.slice(1));
+    });
+    let city = result.join(" ");
 
     User.findOneAndUpdate({ _id: String(req.params.id) }, { city: city })
         .then(() => {
