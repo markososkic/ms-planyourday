@@ -6,17 +6,17 @@ const taskSchema = new mongoose.Schema({
 });
 
 const Task = new mongoose.model(
-    "Task",
+    "PYD-Task",
     taskSchema
 )
 
 const Prio = new mongoose.model(
-    "Priority",
+    "PYD-Priority",
     taskSchema
 )
 
 const Work = new mongoose.model(
-    "Work-task",
+    "PYD-Work-task",
     taskSchema
 );
 

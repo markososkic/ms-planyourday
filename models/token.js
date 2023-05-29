@@ -12,6 +12,6 @@ const tokenSchema = new mongoose.Schema({
     }
 });
 
-const Token = mongoose.model("Token", tokenSchema);
+const Token = mongoose.model("PYD-Token", tokenSchema);
 
 module.exports = Token;
