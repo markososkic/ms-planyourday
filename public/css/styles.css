@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: "Inter", sans-serif;
+    font-family: "Rubik", sans-serif;
     height: 100%;
     overscroll-behavior: none;
     width: 100%;
@@ -17,14 +17,14 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: #5e2c24;
-    font-family: 'Inter', sans-serif;
+    color: #2c2419;
+    font-family: 'Rubik', sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
 
 #preloader {
-    background: #b6aba5 url(/images/logo.png);
+    background: #d5d3d4 url(/images/logo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 10%;
@@ -47,7 +47,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 3.5vmax;
     transition: ease-in-out 3s;
 }
@@ -72,10 +72,10 @@ form {
 
 input {
     background-color: transparent;
-    border: 1px solid #5e2c24;
+    border: 1px solid #2c2419;
     border-radius: 0.5vmax;
     box-sizing: border-box;
-    color: #5e2c24;
+    color: #2c2419;
     display: inline-block;
     font-size: 1vmax;
     height: 2.5vmax;
@@ -85,15 +85,15 @@ input {
 }
 
 input::placeholder {
-    color: #5e2c24;
+    color: #2c2419;
     font-size: 1vmax;
 }
 
 .login-button {
     background-color: transparent;
-    border: 1px solid #5e2c24;
+    border: 1px solid #2c2419;
     border-radius: 0.5vmax;
-    color: #5e2c24;
+    color: #2c2419;
     font-size: 1vmax;
     height: 2.5vmax;
     margin-bottom: 1vmax;
@@ -101,15 +101,15 @@ input::placeholder {
 }
 
 .login-button:hover {
-    background-color: #5e2c24;
-    color: #b6aba5;
+    background-color: #2c2419;
+    color: #d5d3d4;
 }
 
 .register-button {
     background-color: transparent;
-    border: 1px solid #5e2c24;
+    border: 1px solid #2c2419;
     border-radius: 0.5vmax;
-    color: #5e2c24;
+    color: #2c2419;
     font-size: 1vmax;
     height: 2.5vmax;
     margin-bottom: 1vmax;
@@ -117,23 +117,23 @@ input::placeholder {
 }
 
 .register-button:hover {
-    background-color: #5e2c24;
-    color: #b6aba5;
+    background-color: #2c2419;
+    color: #d5d3d4;
 }
 
 .home-button {
     background-color: transparent;
-    border: 1px solid #5e2c24;
+    border: 1px solid #2c2419;
     border-radius: 0.5vmax;
-    color: #5e2c24;
+    color: #2c2419;
     font-size: 1vmax;
     height: 2.5vmax;
     width: 100%;
 }
 
 .home-button:hover {
-    background-color: #5e2c24;
-    color: #b6aba5;
+    background-color: #2c2419;
+    color: #d5d3d4;
 }
 
 footer {
@@ -144,11 +144,12 @@ footer {
 }
 
 footer span {
+    color: #2c2419;
     font-size: 1vmax;
 }
 
 a {
-    color: inherit;
+    color: #2c2419;
     text-decoration: none;
 }
 

@@ -11,11 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
     <link rel="icon" href="/images/favicon.png">
     <title>Plan Your Day</title>
@@ -38,7 +34,7 @@
     </header>
     <main>
         <div class="column-one">
-            <h3>Your Daily Tasks:</h3>
+            <h3>Your Daily Tasks</h3>
             <% for(var i=0; i<newTask.length;i++){ %>
                 <form action="/pages/planyourday/<%=author%>/delete/daily" method="POST">
                     <div class="task-list">
@@ -64,7 +60,7 @@
                     </form>
         </div>
         <div class="column-two">
-            <h3>Your Top Priorities:</h3>
+            <h3>Your Top Priorities</h3>
             <% for(var i=0; i<newPrio.length;i++){ %>
                 <form action="/pages/planyourday/<%=author%>/delete/prio" method="POST">
                     <div class="task-list">
@@ -90,7 +86,7 @@
                     </form>
         </div>
         <div class="column-three">
-            <h3>Your Work Tasks:</h3>
+            <h3>Your Work Tasks</h3>
             <% for(var i=0; i<newWork.length;i++){ %>
                 <form action="/pages/planyourday/<%=author%>/delete/work" method="POST">
                     <div class="task-list">

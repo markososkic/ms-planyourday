@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: "Inter", sans-serif;
+    font-family: "Rubik", sans-serif;
     height: 100%;
     overscroll-behavior: none;
     width: 100%;
@@ -13,15 +13,18 @@ html {
 }
 
 body {
-    background-color: #b6aba5;
-    color: #5e2c24;
-    font-family: 'Inter', sans-serif;
+    background-color: #d5d3d4;
+    color: #2c2419;
+    font-family: 'Rubik', sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
 
 header {
     align-items: center;
+    background-color: #474b3d;
+    box-shadow: 0 0 10px 0 #474b3d;
+    color: #d5d3d4;
     display: flex;
     flex-direction: column;
     min-height: 30vh;
@@ -30,14 +33,14 @@ header {
 }
 
 header h1 {
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 4.5vmax;
     margin-bottom: 2vmax;
     margin-top: 2vmax;
 }
 
 header h3 {
-    font-family: 'Jockey One', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 1.5vmax;
 }
 
@@ -76,34 +79,39 @@ form {
 }
 
 .column-one h3 {
-    color: #5e2c24;
-    font-family: 'Jockey One', sans-serif;
+    color: #474b3d;
+    font-family: 'Rubik', sans-serif;
     font-size: 2vmax;
 }
 
 .column-two h3 {
-    color: #5e2c24;
-    font-family: 'Jockey One', sans-serif;
+    color: #474b3d;
+    font-family: 'Rubik', sans-serif;
     font-size: 2vmax;
 }
 
 .column-three h3 {
-    color: #5e2c24;
-    font-family: 'Jockey One', sans-serif;
+    color: #474b3d;
+    font-family: 'Rubik', sans-serif;
     font-size: 2vmax;
 }
 
 .task-list {
     align-items: center;
+    background-color: #bbbdb7;
+    border-radius: 0.5vmax;
+    box-shadow: 0 0 5px 0 #474b3d;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 1vmax;
+    padding: 0.5rem;
+    transition: ease-in-out 0.3s;
 }
 
 .task-list .daily-task-list {
     align-items: center;
-    color: #5e2c24;
+    color: #474b3d;
     display: flex;
     font-size: 1vmax;
     margin-left: 1vmax;
@@ -111,7 +119,7 @@ form {
 
 .task-list .priorities-list {
     align-items: center;
-    color: #5e2c24;
+    color: #474b3d;
     display: flex;
     font-size: 1vmax;
     margin-left: 1vmax;
@@ -119,7 +127,7 @@ form {
 
 .task-list .work-task-list {
     align-items: center;
-    color: #5e2c24;
+    color: #474b3d;
     display: flex;
     font-size: 1vmax;
     margin-left: 1vmax;
@@ -138,15 +146,15 @@ form {
 }
 
 .task-list .daily-task-list-checkbox:hover {
-    background-color: #5e2c24;
+    background-color: #474b3d;
 }
 
 .task-list .priorities-list-checkbox:hover {
-    background-color: #5e2c24;
+    background-color: #474b3d;
 }
 
 .task-list .work-task-list-checkbox:hover {
-    background-color: #5e2c24;
+    background-color: #474b3d;
 }
 
 .task-input {
@@ -157,10 +165,10 @@ form {
 
 input[type="text"] {
     background-color: transparent;
-    border: 1px solid #5e2c24;
+    border: 1px solid #474b3d;
     border-radius: 0.5vmax;
     box-sizing: border-box;
-    color: #5e2c24;
+    color: #474b3d;
     display: inline-block;
     font-size: 1vmax;
     height: 2.5vmax;
@@ -174,7 +182,7 @@ input[type="checkbox"] {
     -webkit-appearance: none;
     background-color: transparent;
     border: 1px solid;
-    border-color: #5e2c24;
+    border-color: #474b3d;
     border-radius: 50%;
     cursor: pointer;
     height: 1vmax;
@@ -183,8 +191,9 @@ input[type="checkbox"] {
 }
 
 input::placeholder {
-    color: #5e2c24;
+    color: #474b3d;
     font-size: 1vmax;
+    opacity: 0.5;
 }
 
 .new-task {
@@ -194,9 +203,9 @@ input::placeholder {
 
 .add-new-value {
     background-color: transparent;
-    border: 1px solid #5e2c24;
+    border: 1px solid #474b3d;
     border-radius: 0.5vmax;
-    color: #5e2c24;
+    color: #474b3d;
     flex: 1;
     font-size: 1vmax;
     height: 2.5vmax;
@@ -205,8 +214,8 @@ input::placeholder {
 }
 
 .add-new-value:hover {
-    background-color: #5e2c24;
-    color: #b6aba5;
+    background-color: #474b3d;
+    color: #d5d3d4;
 }
 
 section {
@@ -222,9 +231,9 @@ section>div {
 
 .logout-button {
     background-color: transparent;
-    border: 1px solid #5e2c24;
+    border: 1px solid #474b3d;
     border-radius: 0.5vmax;
-    color: #5e2c24;
+    color: #474b3d;
     font-size: 1vmax;
     height: 2.5vmax;
     margin-top: 1vmax;
@@ -232,8 +241,8 @@ section>div {
 }
 
 .logout-button:hover {
-    background-color: #5e2c24;
-    color: #b6aba5;
+    background-color: #474b3d;
+    color: #d5d3d4;
 }
 
 footer {
@@ -244,17 +253,24 @@ footer {
 }
 
 footer span {
+    color: #474b3d;
     font-size: 1vmax;
 }
 
 a {
-    color: inherit;
+    color: #474b3d;
     text-decoration: none;
 }
 
 
 
 
+
+@media(min-width:1366px) {
+    .task-list:hover {
+        transform: rotate(1.5deg);
+    }
+}
 
 @media (max-width: 1024px) and (orientation:portrait) {
 
