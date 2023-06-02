@@ -7,7 +7,7 @@ const dbConnection = () => {
         useUnifiedTopology: true,
     };
 
-    mongoose.connect(process.env.DATABASE, options);
+    mongoose.connect(`mongodb+srv://${process.env.DATABASE}`, options);
 }
 
 module.exports = dbConnection;
