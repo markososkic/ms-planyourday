@@ -90,10 +90,10 @@ input::placeholder {
 }
 
 .login-button {
-    background-color: transparent;
+    background-color: #2c2419;
     border: 1px solid #2c2419;
     border-radius: 0.5vmax;
-    color: #2c2419;
+    color: #d5d3d4;
     font-size: 1vmax;
     height: 2.5vmax;
     margin-bottom: 1vmax;
@@ -101,15 +101,15 @@ input::placeholder {
 }
 
 .login-button:hover {
-    background-color: #2c2419;
+    background-color: #3f3a33;
     color: #d5d3d4;
 }
 
 .register-button {
-    background-color: transparent;
+    background-color: #2c2419;
     border: 1px solid #2c2419;
     border-radius: 0.5vmax;
-    color: #2c2419;
+    color: #d5d3d4;
     font-size: 1vmax;
     height: 2.5vmax;
     margin-bottom: 1vmax;
@@ -117,22 +117,22 @@ input::placeholder {
 }
 
 .register-button:hover {
-    background-color: #2c2419;
+    background-color: #3f3a33;
     color: #d5d3d4;
 }
 
 .home-button {
-    background-color: transparent;
+    background-color: #2c2419;
     border: 1px solid #2c2419;
     border-radius: 0.5vmax;
-    color: #2c2419;
+    color: #d5d3d4;
     font-size: 1vmax;
     height: 2.5vmax;
     width: 100%;
 }
 
 .home-button:hover {
-    background-color: #2c2419;
+    background-color: #3f3a33;
     color: #d5d3d4;
 }
 

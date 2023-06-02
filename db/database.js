@@ -7,7 +7,7 @@ const dbConnection = () => {
         useUnifiedTopology: true,
     };
 
-    mongoose.connect("mongodb+srv://" + process.env.DATABASE + "@cluster0.oabosth.mongodb.net/?retryWrites=true&w=majority", options);
+    mongoose.connect(process.env.DATABASE, options);
 }
 
 module.exports = dbConnection;
