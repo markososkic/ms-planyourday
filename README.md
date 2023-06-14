@@ -9,7 +9,10 @@
 
 
 ## About The App
-This is an easy-to-use, personal daily planner, that helps you keep track of your daily schedule.
+
+A personal daily planner that helps users keep track of their daily schedule.<br>
+Task categories: daily tasks, work tasks, and top priorities.<br>
+Users can update their location to fetch the latest weather data.
 
 ![mockup](public/images/mock-up-01-v02.png)
 
